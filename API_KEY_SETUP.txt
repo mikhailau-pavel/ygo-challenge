@@ -1,0 +1,65 @@
+==========================================
+IMPORTANT: API KEY SETUP REQUIRED
+==========================================
+
+Before running the application, you MUST set up your OpenWeatherMap API key.
+
+STEP 1: Get Your API Key
+-------------------------
+1. Visit: https://openweathermap.org/api
+2. Sign up for a free account
+3. Go to "API keys" section
+4. Copy your API key
+
+STEP 2: Create .env File
+-------------------------
+Create a file named ".env" (exactly, no extension) in the ROOT folder of this project.
+
+The file should contain ONE line:
+
+API_KEY=your_actual_api_key_here
+
+EXAMPLE:
+--------
+If your API key is "abc123def456", your .env file should look like:
+
+API_KEY=abc123def456
+
+IMPORTANT NOTES:
+----------------
+- No quotes around the key
+- No spaces around the equals sign
+- The file must be named exactly ".env"
+- Place it in the same folder as package.json
+
+VERIFY YOUR SETUP:
+------------------
+Your .env file location should be:
+/Users/oadmin/Documents/svelte-projects/svelte-hw/.env
+
+After creating the .env file, run:
+npm install
+npm run dev
+
+Then open: http://localhost:5173
+
+==========================================
+TROUBLESHOOTING
+==========================================
+
+Problem: "API key not configured" error
+Solution: 
+  1. Check that .env file exists in the root folder
+  2. Check that API_KEY is spelled correctly
+  3. Restart the dev server after creating .env
+
+Problem: Can't create .env file
+Solution:
+  Run this command in the terminal:
+  
+  echo 'API_KEY=your_key_here' > .env
+  
+  (Replace your_key_here with your actual API key)
+
+==========================================
+
