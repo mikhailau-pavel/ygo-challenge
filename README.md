@@ -34,6 +34,16 @@ npm run dev
 
 4. Open your browser and navigate to `http://localhost:5173`
 
+## Run Tests
+
+Run the comprehensive test suite (38 tests across 7 files):
+
+```bash
+npm test
+```
+
+All tests should pass with 100% success rate. See `TESTING.md` for detailed test documentation.
+
 ## Build for Production
 
 ```bash
